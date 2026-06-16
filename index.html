@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cine Laptop</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0b0b0b;
+    color:white;
+}
+
+header{
+    background:black;
+    text-align:center;
+    padding:20px;
+    border-bottom:3px solid gold;
+}
+
+header h1{
+    color:gold;
+    font-size:3rem;
+}
+
+header p{
+    color:#ccc;
+    margin-top:10px;
+}
+
+.banner{
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#111,#333,#111);
+    padding:20px;
+}
+
+.banner h2{
+    font-size:4rem;
+}
+
+.banner h3{
+    color:gold;
+    margin-top:10px;
+}
+
+.banner p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#ffd700;
+}
+
+.noticias{
+    padding:40px 20px;
+}
+
+.noticias h2{
+    text-align:center;
+    color:gold;
+    margin-bottom:20px;
+}
+
+.noticia{
+    max-width:900px;
+    margin:auto;
+    background:#181818;
+    border-left:5px solid gold;
+    padding:20px;
+    border-radius:10px;
+}
+
+.noticia h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.noticia p{
+    line-height:1.6;
+}
+
+.titulo{
+    text-align:center;
+    color:gold;
+    margin:30px 0;
+}
+
+.catalogo{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.pelicula{
+    background:#181818;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+}
+
+.pelicula h3{
+    color:gold;
+    margin-bottom:15px;
+}
+
+.pelicula a{
+    display:inline-block;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.pelicula a:hover{
+    background:#ffd700;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    border-top:3px solid gold;
+}
+
+@media(max-width:768px){
+    .banner h2{
+        font-size:2.5rem;
+    }
+
+    .banner h3{
+        font-size:1.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 CINE LAPTOP</h1>
+    <p>Tu plataforma de películas, documentales y stop motion</p>
+</header>
+
+<section class="banner">
+    <div>
+        <h2>LA SIMULACIÓN</h2>
+        <h3>REMASTER EN 3D</h3>
+        <p>Inspirada en los Backrooms</p>
+
+        <a class="boton"
+        href="https://vt.tiktok.com/ZSQVgE2mk/"
+        target="_blank">
+        ▶ VER TRÁILER OFICIAL
+        </a>
+    </div>
+</section>
+
+<section class="noticias">
+
+<h2>📰 Noticias de Cine Laptop</h2>
+
+<div class="noticia">
+<h3>🎉 Inauguración del Sitio Web</h3>
+
+<p>
+El día <strong>15 de junio de 2026</strong> a las
+<strong>9:11 p.m.</strong> se inaugura oficialmente
+el sitio web de <strong>Cine Laptop</strong>.
+</p>
+
+<p>
+A partir de esta fecha los visitantes podrán disfrutar
+de documentales, cortometrajes y producciones stop motion
+publicadas en la plataforma.
+</p>
+
+<p>
+🍿 ¡Bienvenidos a Cine Laptop!
+</p>
+
+</div>
+
+</section>
+
+<h2 class="titulo">🍿 CATÁLOGO COMPLETO</h2>
+
+<section class="catalogo">
+
+<div class="pelicula">
+<h3>Documental de Carnaval Tlaxcala</h3>
+<a href="https://youtu.be/ItAyKz9irlE" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>Lavar Platos Stop Motion</h3>
+<a href="https://youtu.be/XG2CLA7uuzs" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>La Carrera de Carros Stop Motion</h3>
+<a href="https://youtu.be/dxqasHpvR-c" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>La Guerra de Pancracio Parte 2</h3>
+<a href="https://youtu.be/JkZ51R-z30o" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>La Guerra de Pancracio</h3>
+<a href="https://youtu.be/MyY0r5QoIwY" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>La Simulación</h3>
+<a href="https://youtu.be/pokEncxip4I" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>Tendiendo la Cama Stop Motion</h3>
+<a href="https://youtu.be/sjFXZRWHuQY" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>2do Stop Motion</h3>
+<a href="https://youtu.be/fcPzgnMxAuQ" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>Comiendo</h3>
+<a href="https://youtu.be/z8UWk_M1bJA" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>Nocturne: Adaptación</h3>
+<a href="https://youtu.be/hYmyKxIMozY" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>1er Stop Motion</h3>
+<a href="https://youtu.be/XwBTnwutsVU" target="_blank">▶ Ver</a>
+</div>
+
+<div class="pelicula">
+<h3>Documental Pan de Muerto Original</h3>
+<a href="https://youtu.be/5X8gx_yEFLg" target="_blank">▶ Ver</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 Cine Laptop - Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
