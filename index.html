@@ -1,357 +1,300 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cine Laptop v2.0</title>
-<style>
-/* =========================
-   CONFIGURACIÓN GENERAL
-========================= */
-
-*{
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:#050B14;
-    color:white;
-    margin:0;
-}
-
-
-/* =========================
-   HEADER Y FOOTER
-========================= */
-
-header, footer{
-    background:#02050A;
-    text-align:center;
-    padding:20px;
-}
-
-header{
-    border-bottom:3px solid #00FFD5;
-    box-shadow:0 0 20px #00FFD5;
-}
-
-footer{
-    border-top:3px solid #00A3FF;
-    box-shadow:0 0 20px #00A3FF;
-}
-
-
-/* =========================
-   TITULOS
-========================= */
-
-h1,h2,h3{
-    color:#00FFD5;
-    text-shadow:0 0 10px #00FFD5;
-}
-
-
-/* =========================
-   BANNER PRINCIPAL
-========================= */
-
-.banner{
-    padding:60px 20px;
-    text-align:center;
-    background:linear-gradient(
-        135deg,
-        #050B14,
-        #003B66,
-        #006699,
-        #050B14
-    );
-}
-
-
-/* =========================
-   BOTONES GENERALES
-========================= */
-
-.boton{
-    display:inline-block;
-    background:#00FFD5;
-    color:#02050A;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    box-shadow:0 0 15px #00FFD5;
-    transition:0.3s;
-}
-
-.boton:hover{
-    background:#00A3FF;
-    color:white;
-    transform:scale(1.05);
-    box-shadow:0 0 25px #00A3FF;
-}
-
-
-/* =========================
-   NOTICIAS
-========================= */
-
-.noticias{
-    padding:20px;
-}
-
-.noticia{
-    background:#0B1628;
-    padding:20px;
-    border-left:5px solid #00FFD5;
-    border-radius:10px;
-    max-width:900px;
-    margin:20px auto;
-    box-shadow:0 0 15px #003B66;
-}
-
-
-/* =========================
-   CATALOGO DE PELÍCULAS
-========================= */
-
-.catalogo{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
-    padding:20px;
-}
-
-
-/* =========================
-   TARJETAS DE PELÍCULAS
-========================= */
-
-.pelicula{
-    background:#0B1628;
-    padding:20px;
-    border-radius:12px;
-    border:1px solid #00A3FF;
-    box-shadow:0 0 15px #003B66;
-    transition:0.3s;
-}
-
-.pelicula:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 25px #00FFD5;
-}
-
-.pelicula p{
-    color:#D8F7FF;
-    line-height:1.5;
-}
-
-
-/* =========================
-   BOTÓN DE PELÍCULAS
-========================= */
-
-.pelicula a{
-    display:inline-block;
-    margin-top:10px;
-    background:#00A3FF;
-    color:white;
-    padding:10px 20px;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    box-shadow:0 0 15px #00A3FF;
-    transition:0.3s;
-}
-
-.pelicula a:hover{
-    background:#00FFD5;
-    color:#02050A;
-    box-shadow:0 0 25px #00FFD5;
-}
-
-
-/* =========================
-   IMÁGENES / POSTERS
-========================= */
-
-.pelicula img{
-    width:100%;
-    border-radius:10px;
-    border:2px solid #00FFD5;
-    box-shadow:0 0 15px #00FFD5;
-}
-
-
-/* =========================
-   SECCIONES
-========================= */
-
-section{
-    padding:20px;
-}
-
-
-/* =========================
-   ENLACES
-========================= */
-
-a{
-    color:#00A3FF;
-    transition:0.3s;
-}
-
-a:hover{
-    color:#00FFD5;
-    text-shadow:0 0 10px #00FFD5;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Laptop v2.8</title>
+    <!-- Librería de iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Vinculación con el archivo CSS externo -->
+    <link rel="stylesheet" href="estilocl.css">
 </head>
 <body>
+
 <header>
-<h1>💻CINE LAPTOP</h1>
-<p>Versión 2.0</p>
+    <h1><i class="fa-solid fa-laptop-code"></i> CINE LAPTOP</h1>
+    <p>Versión 2.8</p>
 </header>
 
-<section style="padding:20px;text-align:center;background:#111;border-bottom:2px solid #0B1628">
-<h2>🎬 PRÓXIMOS ESTRENOS</h2>
-<div style="max-width:900px;margin:auto">
-</div>
+<section class="banner-proximos">
+    <h2><i class="fa-solid fa-film"></i> PRÓXIMOS ESTRENOS</h2>
 </section>
-
 
 <section class="banner">
-<h2>🌟 LA SIMULACIÓN REMASTER EN 3D</h2>
-<p>En 2027 SOLO POR CINE LAPTOP - Más capítulos y gráficos 3D</p>
-<a class="boton" href="https://vt.tiktok.com/ZSQVgE2mk/" target="_blank">▶️ Ver Tráiler</a>
+    <h2><i class="fa-solid fa-cube"></i> LA SIMULACIÓN REMASTER EN 3D</h2>
+    <p>En 2027 SOLO POR CINE LAPTOP - Más capítulos y gráficos 3D</p>
+    <div id="tt-simulacion">
+        <button class="boton-reproducir" onclick="reproducirTikTok('tt-simulacion', 'https://vt.tiktok.com/ZSQVgE2mk/')"><i class="fa-solid fa-play"></i> Ver Tráiler</button>
+    </div>
 
-<br><br><br>
-<hr>
+    <br><hr><br>
 
-<br>
+    <h2><i class="fa-solid fa-mountain"></i> DOCUMENTAL CERRO CUATLAPANGA</h2>
+    <p>En 2027 – Mejoras y mucho más</p>
+    <a class="boton" href="https://maps.app.goo.gl/yGFGzm3ZJDmzSC988" target="_blank"><i class="fa-solid fa-location-dot"></i> Ver ubicación</a>
 
-<h2>⛰️ DOCUMENTAL CERRO CUATLAPANGA</h2>
-<p>En 2027 – Mejoras y mucho mas</p>
-<a class="boton" href="https://maps.app.goo.gl/yGFGzm3ZJDmzSC988" target="_blank">▶️ Ver ubicacion</a>
+    <br><hr><br>
 
-<br><br><br>
-
-<hr>
-
-<br>
-
-<h2>🌎DOCUMENTAL MIL MASCARAS</h2>
-<p>30 De Junio SOLO POR CINE LAPTOP – Una Leyenda Mundial</p>
-<a class="boton" href="https://vt.tiktok.com/ZSQWHgw1m/" target="_blank">▶️ Ver Tráiler</a>
+    <h2><i class="fa-solid fa-globe"></i> DOCUMENTAL MIL MÁSCARAS</h2>
+    <p>30 de Junio SOLO POR CINE LAPTOP – Una Leyenda Mundial</p>
+    <div id="tt-mascaras">
+        <button class="boton-reproducir" onclick="reproducirTikTok('tt-mascaras', 'https://vt.tiktok.com/ZSQWHgw1m/')"><i class="fa-solid fa-play"></i> Ver Tráiler</button>
+    </div>
 </section>
 
+<!-- SECCIÓN DE NOTICIAS Y NOVEDADES -->
+<section class="noticias-container">
+    <h2 class="seccion-titulo"><i class="fa-solid fa-newspaper"></i> NOTICIAS Y NOVEDADES</h2>
+    
+    <div class="noticias-grid">
+        <article class="noticia-card">
+            <div class="noticia-header">
+                <span class="noticia-badge badge-oficial"><i class="fa-solid fa-bullhorn"></i> Aviso Oficial</span>
+                <span class="noticia-fecha"><i class="fa-regular fa-calendar-days"></i> 15 Jun 2026</span>
+            </div>
+            <h3>Inauguración del Sitio Web</h3>
+            <p>Lanzamiento oficial de la plataforma Cine Laptop para reunir nuestras producciones, stop motions y cortometrajes en un solo lugar.</p>
+        </article>
 
-<section class="noticias">
-<div class="noticia">
-<h3>🎉 Inauguración del Sitio Web</h3>
-<p>15 de junio de 2026 - 9:11 p.m.</p>
-</div>
+        <article class="noticia-card">
+            <div class="noticia-header">
+                <span class="noticia-badge badge-update"><i class="fa-solid fa-arrows-rotate"></i> Actualización</span>
+                <span class="noticia-fecha"><i class="fa-regular fa-calendar-days"></i> 01 Jul 2026</span>
+            </div>
+            <h3>Versión 2.8 Lanzada</h3>
+            <p>Se integraron clasificaciones por estrellas, descripciones detalladas, badges de reconocimientos, nueva paleta de colores y enlaces oficiales.</p>
+        </article>
 
-<div class="noticia">
-<h3>🆕 Actualización 2.8 - 1 de julio de 2026</h3>
-<p>Se agregan descripciones, calificaciones, próximos estrenos colores clasificaciones y cuentas oficiales.</p>
-</div>
-
-<div class="noticia">
-<h3>⭐: 🦃🎬 ¡Gracias Cinema Guajolote! 🎉📽️- 27 de julio de 2026</h3>
-<p> gracias cinema guajolote Hoy subimos documental pan de muerto </p>
-</div>
-
-</section>
-
-<hr>
-
-<section style="padding:20px;text-align:center;background:#111;border-bottom:2px solid #0B1628">
-<h2>🎞️ TE RECOMENDAMOS</h2>
-<div style="max-width:900px;margin:auto">
-</div>
-<br><br><br>
-<section class="catalogo">
-<div class="pelicula"><h3>🍞💀 Documental Pan de Muerto Remaster </h3><p>Documental sobre la creación artesanal del pan de muerto y su importancia en las ofrendas remasterizada y proyectada en cinema guajolote. 2026. PRIMER LUGAR DEL MES 🥇</p><a href="https://youtu.be/DZT6qLmZT_0?si=SA-gj3B86AgozMyO">🎬 Reproducir</a></div>
-
-<div class="pelicula"><h3> 🍞 Documental Pan de Muerto Original </h3><p> Documental sobre la creación artesanal del pan de muerto y su importancia en las ofrendas. 2025. SEGUNDO LUGAR DEL MES 🥈 </p><a href="https://www.youtube.com/watch?v=5X8gx_yEFLg ">🎬 Reproducir</a></div>
-
-<div class="pelicula"><h3> 🌙 Nocturne: Adaptación </h3><p> Un monstruo persigue al niño protagonista. TERCER LUGAR DEL MES🥉</p><a href="https://www.youtube.com/watch?v=hYmyKxIMozY ">🎬 Reproducir </a></div>
-
+        <article class="noticia-card destacada">
+            <div class="noticia-header">
+                <span class="noticia-badge badge-logro"><i class="fa-solid fa-trophy"></i> Logro</span>
+                <span class="noticia-fecha"><i class="fa-regular fa-calendar-days"></i> 27 Jul 2026</span>
+            </div>
+            <h3>¡Gracias Cinema Guajolote!</h3>
+            <p>Presentación exitosa en el festival. Como agradecimiento a la comunidad, publicamos en el catálogo la versión <strong>Remaster del Documental Pan de Muerto</strong>.</p>
+        </article>
+    </div>
 </section>
 
 <hr>
 
-<br><br>
-
-<h2 style="text-align:center">🎥 DOCUMENTALES</h2>
-
-<section class="catalogo">
-<div class="pelicula"><h3>🍞 Documental Pan de Muerto Original ⭐⭐⭐⭐☆</h3><p>Documental sobre la creación artesanal del pan de muerto.</p><a href="https://www.youtube.com/watch?v=5X8gx_yEFLg">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>🍞💀 Documental Pan de Muerto Remaster⭐⭐⭐⭐⭐</h3><p>Documental sobre la creación artesanal del pan de muerto remasterizado y proyectado en cinema guajolote. </p><a href="https://youtu.be/DZT6qLmZT_0?si=SA-gj3B86AgozMyO ">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>🎭 Documental de Carnaval Tlaxcala ⭐⭐⭐⭐☆</h3><p>Recopilación de videos y costumbres del carnaval.</p><a href="https://www.youtube.com/watch?v=ItAyKz9irlE">🎞️ Reproducir</a></div>
-
+<section class="seccion-recomendados">
+    <h2 class="seccion-titulo"><i class="fa-solid fa-thumbs-up"></i> TE RECOMENDAMOS</h2>
+    <div class="catalogo">
+        <div class="pelicula" id="rec-pan-remaster">
+            <h3>Documental Pan de Muerto Remaster</h3>
+            <span class="badge primer-lugar"><i class="fa-solid fa-trophy"></i> PRIMER LUGAR DEL MES</span>
+            <p>Documental sobre la creación artesanal del pan de muerto y su importancia en las ofrendas remasterizada y proyectada en Cinema Guajolote. 2026.</p>
+            <button class="boton-reproducir" onclick="reproducirVideo('rec-pan-remaster', 'DZT6qLmZT_0')"><i class="fa-solid fa-play"></i> Reproducir</button>
+        </div>
+        <div class="pelicula" id="rec-pan-original">
+            <h3>Documental Pan de Muerto Original</h3>
+            <span class="badge segundo-lugar"><i class="fa-solid fa-medal"></i> SEGUNDO LUGAR DEL MES</span>
+            <p>Documental sobre la creación artesanal del pan de muerto y su importancia en las ofrendas. 2025.</p>
+            <button class="boton-reproducir" onclick="reproducirVideo('rec-pan-original', '5X8gx_yEFLg')"><i class="fa-solid fa-play"></i> Reproducir</button>
+        </div>
+        <div class="pelicula" id="rec-nocturne">
+            <h3>Nocturne: Adaptación</h3>
+            <span class="badge tercer-lugar"><i class="fa-solid fa-award"></i> TERCER LUGAR DEL MES</span>
+            <p>Un monstruo persigue al niño protagonista.</p>
+            <button class="boton-reproducir" onclick="reproducirVideo('rec-nocturne', 'hYmyKxIMozY')"><i class="fa-solid fa-play"></i> Reproducir</button>
+        </div>
+    </div>
 </section>
 
-<h2 style="text-align:center">🎬 STOP MOTION</h2>
+<hr>
+
+<h2 style="text-align:center; margin-top: 30px;"><i class="fa-solid fa-video"></i> DOCUMENTALES</h2>
 
 <section class="catalogo">
-<div class="pelicula"><h3>🎞️ 1er Stop Motion ⭐⭐⭐☆☆</h3><p>Un oso participa en una breve pelea de menos de cuatro segundos.</p><a href="https://www.youtube.com/watch?v=XwBTnwutsVU">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>🎬 2do Stop Motion ⭐⭐⭐☆☆</h3><p>Muñequitos de plastilina bailan La Macarena.</p><a href="https://www.youtube.com/watch?v=fcPzgnMxAuQ">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>🍽️ Comiendo ⭐⭐⭐⭐☆</h3><p>Stop motion sobre una persona comiendo.</p><a href="https://www.youtube.com/watch?v=z8UWk_M1bJA">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>🚗 La Carrera de Carros Stop Motion ⭐⭐⭐☆☆</h3><p>Una carrera en una pista difícil.</p><a href="https://www.youtube.com/watch?v=dxqasHpvR-c">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>🧼 Lavar Platos Stop Motion ⭐⭐⭐⭐☆</h3><p>Los platos se lavan solos.</p><a href="https://www.youtube.com/watch?v=XG2CLA7uuzs">🎞️ Reproducir</a></div>
-<div class="pelicula"> <h3>🛏️ Tendiendo la Cama Stop Motion ⭐⭐⭐⭐☆</h3> <p>Una cama se tiende sola.</p> <a href="https://www.youtube.com/watch?v=sjFXZRWHuQY">🎞️ Reproducir </a></div>
+    <div class="pelicula" id="doc-pan-original">
+        <h3>Documental Pan de Muerto Original</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Documental sobre la creación artesanal del pan de muerto.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('doc-pan-original', '5X8gx_yEFLg')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="doc-pan-remaster">
+        <h3>Documental Pan de Muerto Remaster</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>Documental sobre la creación artesanal del pan de muerto remasterizado y proyectado en Cinema Guajolote.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('doc-pan-remaster', 'DZT6qLmZT_0')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="doc-carnaval">
+        <h3>Documental de Carnaval Tlaxcala</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Recopilación de videos y costumbres del carnaval.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('doc-carnaval', 'ItAyKz9irlE')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
 </section>
-<h2 style="text-align:center">📺 SERIES</h2>
+
+<h2 style="text-align:center;"><i class="fa-solid fa-camera-retro"></i> STOP MOTION</h2>
+
 <section class="catalogo">
-<div class="pelicula"><h3>🌟 La Simulación ⭐⭐⭐☆☆</h3><p>Serie en pixel art inspirada en los Backrooms.</p><a href="https://www.youtube.com/watch?v=pokEncxip4I">🎞️ Reproducir</a></div>
-<div class="pelicula"><h3>⚔️ La Guerra de Pancracio ⭐⭐⭐⭐☆</h3><p>Pancracio es capturado y logra escapar.</p><a href="https://www.youtube.com/watch?v=MyY0r5QoIwY">🎞️ Reproducir</a></div>
+    <div class="pelicula" id="sm-1er">
+        <h3>1er Stop Motion</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Un oso participa en una breve pelea de menos de cuatro segundos.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('sm-1er', 'XwBTnwutsVU')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="sm-2do">
+        <h3>2do Stop Motion</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Muñequitos de plastilina bailan La Macarena.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('sm-2do', 'fcPzgnMxAuQ')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="sm-comiendo">
+        <h3>Comiendo</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Stop motion sobre una persona comiendo.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('sm-comiendo', 'z8UWk_M1bJA')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="sm-carrera">
+        <h3>La Carrera de Carros Stop Motion</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Una carrera en una pista difícil.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('sm-carrera', 'dxqasHpvR-c')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="sm-platos">
+        <h3>Lavar Platos Stop Motion</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Los platos se lavan solos.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('sm-platos', 'XG2CLA7uuzs')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="sm-cama">
+        <h3>Tendiendo la Cama Stop Motion</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Una cama se tiende sola.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('sm-cama', 'sjFXZRWHuQY')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
 </section>
+
+<h2 style="text-align:center;"><i class="fa-solid fa-tv"></i> SERIES</h2>
+
 <section class="catalogo">
-<div class="pelicula"><h3>⚔️ La Guerra de Pancracio Parte 2 ⭐⭐⭐⭐☆</h3><p>Capturan una ciudad y pierden una dura batalla.</p><a href="https://www.youtube.com/watch?v=JkZ51R-z30o">🎞️ Reproducir</a></div>
+    <div class="pelicula" id="serie-simulacion">
+        <h3>La Simulación</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Serie en pixel art inspirada en los Backrooms.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('serie-simulacion', 'pokEncxip4I')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="serie-pancracio1">
+        <h3>La Guerra de Pancracio</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Pancracio es capturado y logra escapar.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('serie-pancracio1', 'MyY0r5QoIwY')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+    <div class="pelicula" id="serie-pancracio2">
+        <h3>La Guerra de Pancracio Parte 2</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Capturan una ciudad y pierden una dura batalla.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('serie-pancracio2', 'JkZ51R-z30o')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
 </section>
-<h2 style="text-align:center">🎭 ADAPTACIONES</h2>
+
+<h2 style="text-align:center;"><i class="fa-solid fa-masks-theater"></i> ADAPTACIONES</h2>
+
 <section class="catalogo">
-<div class="pelicula"><h3>🌙 Nocturne: Adaptación ⭐⭐⭐⭐☆</h3><p>Un monstruo persigue al niño protagonista.</p><a href="https://www.youtube.com/watch?v=hYmyKxIMozY">🎞️ Reproducir</a></div>
+    <div class="pelicula" id="adap-nocturne">
+        <h3>Nocturne: Adaptación</h3>
+        <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+        <p>Un monstruo persigue al niño protagonista.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('adap-nocturne', 'hYmyKxIMozY')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
 </section>
 
-<h2 style="text-align:center">⭐Todos Los Videos En Una Playlist⭐</h2>
+<h2 style="text-align:center;"><i class="fa-solid fa-layer-group"></i> Playlist Completa</h2>
 
 <section class="catalogo">
-<div class="pelicula"><h3> Cine Laptop videos</h3><p>12 videos con stop motion, pixel art y mucho mas</p><a href="https://www.youtube.com/watch?v=hYmyKxIMozY">🎞️ Reproducir </a></div>
+    <div class="pelicula" id="playlist-all">
+        <h3>Cine Laptop videos</h3>
+        <p>12 videos con stop motion, pixel art y mucho más.</p>
+        <button class="boton-reproducir" onclick="reproducirVideo('playlist-all', 'hYmyKxIMozY')"><i class="fa-solid fa-play"></i> Reproducir</button>
+    </div>
+</section>
+<!-- SECCIÓN DE FOTOGRAFÍAS Y POSTERS -->
+<h2 style="text-align:center; margin-top: 40px;"><i class="fa-solid fa-camera"></i> GALERÍA Y POSTERS OFICIALES</h2>
+
+<section class="galeria-instagram-grid">
+    <!-- Foto 1: Cinema Guajolote Poster -->
+    <div class="instagram-card">
+        <iframe src="https://www.instagram.com/p/DaRuGDLjar_/embed" 
+                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Foto 2: Publicación 2 -->
+    <div class="instagram-card">
+        <iframe src="https://www.instagram.com/p/DWKG4nkiTvj/embed" 
+                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Foto 3: Publicación 3 -->
+    <div class="instagram-card">
+        <iframe src="https://www.instagram.com/p/DWKGU-ciRKA/embed" 
+                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    </div>
+
+    <!-- Foto 4: Publicación 4 -->
+    <div class="instagram-card">
+        <iframe src="https://www.instagram.com/p/DPnYvqYDAwD/embed" 
+                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    </div>
 </section>
 
+<section class="redes-sociales">
+    <h2><i class="fa-solid fa-share-nodes"></i> Síguenos en nuestras redes sociales</h2>
+    <p>
+        <a href="https://www.instagram.com/cine_laptop?igsh=MTNnYmh3cWltYWNwMw==" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> |
+        <a href="https://www.facebook.com/share/1HJiUqpKvt/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> |
+        <a href="https://youtube.com/@cinelaptop-u9j?si=R7igyP9XsIZM3z_m" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> |
+        <a href="https://www.tiktok.com/@cine_laptop?_r=1&_t=ZS-97P9AJISHOU" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a> |
+        <a href="https://x.com/cinelaptop?s=11" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a> |
+        <a href="https://whatsapp.com/channel/0029VaeHSpp7tkj45zYfi31U" target="_blank"><i class="fa-brands fa-whatsapp"></i> Canal de WhatsApp</a> |
+        <a href="https://www.threads.com/@cine_laptop?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa-brands fa-threads"></i> Threads</a>
+    </p>
+</section>
 
-<h1>🌐 Síguenos en nuestras redes sociales</h1>
+<footer>
+    © 2026 Cine Laptop<br><br>
+    Fernando Blancas Salado y Antonio Serrano Rojas<br><br>
+    <a href="https://www.instagram.com/ferblssld80?igsh=MWRucmgxNHA3bWVpOQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i> FERNANDO INSTAGRAM</a> |
+    <a href="https://www.instagram.com/c.blanca_luna?igsh=aXA5aGdsdTBoYjV" target="_blank"><i class="fa-brands fa-instagram"></i> ANTONIO INSTAGRAM</a>
+</footer>
 
-<a href="https://www.instagram.com/cine_laptop?igsh=MTNnYmh3cWltYWNwMw==" target="_blank">📸Instagram</a> |
+<!-- Carga de la API de TikTok -->
+<script async src="https://www.tiktok.com/embed.js"></script>
 
-<a href="https://www.facebook.com/share/1HJiUqpKvt/?mibextid=wwXIfr" target="_blank">📘Facebook</a> |
+<script>
+// Reproductor dinámico de YouTube
+function reproducirVideo(idTarjeta, idVideo) {
+    var tarjeta = document.getElementById(idTarjeta);
+    var boton = tarjeta.querySelector('.boton-reproducir');
+    
+    var contenedorVideo = document.createElement('div');
+    contenedorVideo.className = 'contenedor-video-embed';
+    contenedorVideo.innerHTML = '<iframe src="https://www.youtube.com/embed/' + idVideo + '?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    
+    tarjeta.replaceChild(contenedorVideo, boton);
+}
 
-<a href="https://youtube.com/@cinelaptop-u9j?si=R7igyP9XsIZM3z_m" target="_blank">📺Youtube</a> |
-
-<a href="https://www.tiktok.com/@cine_laptop?_r=1&_t=ZS-97P9AJISHOU" target="_blank">🎵Tik Tok</a> |
-
-<a href="https://x.com/cinelaptop?s=11" target="_blank">𝕏 Twiter</a> |
-
-<a href="https://whatsapp.com/channel/0029VaeHSpp7tkj45zYfi31U" target="_blank">💬 Canal de WhatsApp</a> |
-
-<a href="https://www.threads.com/@cine_laptop?igshid=NTc4MTIwNjQ2YQ==" target="_blank">🧵Threads</a> |
-
-<br><br><br>
-
-<footer>© 2026 Cine Laptop  
-
-<br><br>
-
- Fernando Blancas Salado y Antonio Serrano Rojas</footer>
-
-<a href="https://www.instagram.com/ferblssld80?igsh=MWRucmgxNHA3bWVpOQ%3D%3D&utm_source=qr" target="_blank">FERNANDO INSTAGRAM</a> |
-
-<a href="https://www.instagram.com/c.blanca_luna?igsh=aXA5aGdsdTBoYjV" target="_blank">ANTONIO INSAGRAM</a> 
+// Reproductor dinámico de TikTok
+function reproducirTikTok(idContenedor, urlTikTok) {
+    var contenedor = document.getElementById(idContenedor);
+    
+    contenedor.innerHTML = `
+        <div class="contenedor-tiktok-embed">
+            <blockquote class="tiktok-embed" cite="${urlTikTok}" data-video-id="" style="max-width: 605px;min-width: 325px;">
+                <section>
+                    <a target="_blank" href="${urlTikTok}">Ver tráiler en TikTok</a>
+                </section>
+            </blockquote>
+        </div>
+    `;
+    
+    if (window.tiktokEmbed) {
+        window.tiktokEmbed.load();
+    }
+}
+</script>
 
 </body>
-</html>*
+</html>
