@@ -4,9 +4,9 @@
 :root {
     --color-light-yellow: #FEF2A0; /* Texto secundario / Destacados suaves */
     --color-beige: #F3CD97;        /* Tono secundario cálido / Bordes */
-    --primary-color: #E98B50;     /* Color de acento / Botones activos */
-    --primary-hover: #d3753b;     /* Hover para interacción */
-    --accent-red: #BC4F4F;        /* Color dominante / Fondos / Encabezados */
+    --primary-color: #E98B50;      /* Color de acento / Botones activos */
+    --primary-hover: #d3753b;      /* Hover para interacción */
+    --accent-red: #BC4F4F;         /* Color dominante / Fondos / Encabezados */
     
     --bg-dark: #0a0a0a;
     --bg-card: #141414;
@@ -21,6 +21,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 hr {
@@ -33,9 +34,23 @@ hr {
 /* Header */
 header {
     background-color: #111;
-    text-align: center;
     padding: 30px 20px;
     border-bottom: 3px solid var(--accent-red);
+}
+
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo-emoji {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(233, 139, 80, 0.4));
 }
 
 header h1 {
@@ -47,7 +62,7 @@ header h1 {
 
 header p {
     color: var(--color-light-yellow);
-    margin-top: 5px;
+    margin: 5px 0 0 0;
 }
 
 /* Banners superiores */
@@ -58,13 +73,7 @@ header p {
     border-bottom: 2px solid var(--accent-red);
 }
 
-.banner {
-    padding: 30px 20px;
-    text-align: center;
-    background-color: #0d0d0d;
-}
-
-.banner h2 {
+.banner-proximos h2 {
     color: var(--primary-color);
 }
 
@@ -317,21 +326,6 @@ a:hover {
     width: 100%;
 }
 
-/* Redes y Footer */
-.redes-sociales {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #0d0d0d;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    background-color: #050505;
-    border-top: 1px solid var(--accent-red);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
 /* =========================================
    GALERÍA DE FOTOS INSTAGRAM
 ========================================= */
@@ -366,16 +360,38 @@ footer {
     border-radius: 0 0 6px 6px;
     background-color: #000;
 }
-.header-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+
+/* Redes y Footer */
+.redes-sociales {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #0d0d0d;
+    line-height: 2;
 }
 
-.logo-emoji {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 8px rgba(233, 139, 80, 0.4)); /* Brillo suave en la paleta del sitio */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #050505;
+    border-top: 1px solid var(--accent-red);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   DISEÑO RESPONSIVO (MÓVILES Y TABLETS)
+========================================= */
+@media (max-width: 768px) {
+    .pelicula, .noticia-card, .instagram-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .seccion-titulo {
+        font-size: 1.3rem;
+    }
 }
