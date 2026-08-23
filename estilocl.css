@@ -1,1 +1,368 @@
-hola
+/* =========================================
+   VARIABLES GLOBALES (PALETA COLOR HUNT)
+========================================= */
+:root {
+    --color-light-yellow: #FEF2A0; /* Texto secundario / Destacados suaves */
+    --color-beige: #F3CD97;        /* Tono secundario cálido / Bordes */
+    --primary-color: #E98B50;     /* Color de acento / Botones activos */
+    --primary-hover: #d3753b;     /* Hover para interacción */
+    --accent-red: #BC4F4F;        /* Color dominante / Fondos / Encabezados */
+    
+    --bg-dark: #0a0a0a;
+    --bg-card: #141414;
+    --text-color: #ffffff;
+    --text-muted: #F3CD97;
+}
+
+/* Base del sitio */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #222;
+    margin: 30px 0;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid var(--accent-red);
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: var(--color-light-yellow);
+    margin-top: 5px;
+}
+
+/* Banners superiores */
+.banner-proximos {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    border-bottom: 2px solid var(--accent-red);
+}
+
+.banner {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+}
+
+.banner h2 {
+    color: var(--primary-color);
+}
+
+/* Enlaces Generales */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-light-yellow);
+}
+
+/* Botones Principales */
+.boton {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+/* Tarjetas y Catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pelicula {
+    background-color: var(--bg-card);
+    border: 1px solid #222;
+    border-top: 3px solid var(--accent-red);
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pelicula h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.pelicula p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* =========================================
+   ESTRELLAS Y BADGES DE POSICIÓN
+========================================= */
+.rating {
+    color: var(--color-light-yellow);
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.primer-lugar {
+    background-color: var(--accent-red);
+    color: var(--color-light-yellow);
+}
+
+.segundo-lugar {
+    background-color: rgba(233, 139, 80, 0.2);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.tercer-lugar {
+    background-color: #222;
+    color: var(--color-beige);
+    border: 1px solid var(--color-beige);
+}
+
+/* =========================================
+   SECCIÓN DE NOTICIAS
+========================================= */
+.noticias-container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.seccion-titulo {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+.noticias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.noticia-card {
+    background-color: var(--bg-card);
+    border: 1px solid #222;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticia-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-beige);
+    box-shadow: 0 6px 16px rgba(233, 139, 80, 0.15);
+}
+
+.noticia-card.destacada {
+    border-left-color: var(--accent-red);
+    background: linear-gradient(145deg, #161212 0%, var(--bg-card) 100%);
+}
+
+.noticia-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.noticia-fecha {
+    font-size: 0.75rem;
+    color: var(--color-beige);
+}
+
+.noticia-card h3 {
+    margin: 5px 0 10px 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.noticia-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.noticia-badge {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.badge-oficial {
+    background-color: rgba(233, 139, 80, 0.15);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.badge-update {
+    background-color: rgba(243, 205, 151, 0.15);
+    color: var(--color-beige);
+    border: 1px solid var(--color-beige);
+}
+
+.badge-logro {
+    background-color: var(--accent-red);
+    color: var(--color-light-yellow);
+}
+
+/* =========================================
+   REPRODUCTORES DINÁMICOS Y EMBEDS
+========================================= */
+.boton-reproducir {
+    background-color: #1a1a1a;
+    color: var(--color-light-yellow);
+    border: 1px solid var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.boton-reproducir:hover {
+    background-color: var(--primary-color);
+    color: #000;
+    box-shadow: 0 0 10px rgba(233, 139, 80, 0.5);
+}
+
+.contenedor-video-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #000;
+    border: 1px solid var(--accent-red);
+}
+
+.contenedor-video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contenedor-tiktok-embed {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Redes y Footer */
+.redes-sociales {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #0d0d0d;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #050505;
+    border-top: 1px solid var(--accent-red);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+/* =========================================
+   GALERÍA DE FOTOS INSTAGRAM
+========================================= */
+.galeria-instagram-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.instagram-card {
+    background-color: var(--bg-card);
+    border: 1px solid #222;
+    border-top: 3px solid var(--accent-red);
+    border-radius: 8px;
+    width: 320px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.instagram-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.instagram-card iframe {
+    border: none;
+    border-radius: 0 0 6px 6px;
+    background-color: #000;
+}
