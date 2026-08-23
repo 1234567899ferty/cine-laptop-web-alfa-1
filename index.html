@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" href="https://www.gstatic.com/android/keyboard/emojikitchen/20240530/u1f4bb/u1f4bb_u1f3ac.png">
 </head>
 <body>
+
 <header>
     <div class="header-logo-container">
         <img src="https://www.gstatic.com/android/keyboard/emojikitchen/20240530/u1f4bb/u1f4bb_u1f3ac.png" alt="Cine Laptop Logo" class="logo-emoji">
@@ -20,30 +21,46 @@
         </div>
     </div>
 </header>
+
+<!-- SECCIÓN PRÓXIMOS ESTRENOS -->
 <section class="banner-proximos">
     <h2><i class="fa-solid fa-film"></i> PRÓXIMOS ESTRENOS</h2>
-</section>
 
-<section class="banner">
-    <h2><i class="fa-solid fa-cube"></i> LA SIMULACIÓN REMASTER EN 3D</h2>
-    <p>En 2027 SOLO POR CINE LAPTOP - Más capítulos y gráficos 3D</p>
-    <div id="tt-simulacion">
-        <button class="boton-reproducir" onclick="reproducirTikTok('tt-simulacion', 'https://vt.tiktok.com/ZSQVgE2mk/')"><i class="fa-solid fa-play"></i> Ver Tráiler</button>
-    </div>
-
-    <br><hr><br>
-
-    <h2><i class="fa-solid fa-mountain"></i> DOCUMENTAL CERRO CUATLAPANGA</h2>
-    <p>En 2027 – Mejoras y mucho más</p>
-    <a class="boton" href="https://maps.app.goo.gl/yGFGzm3ZJDmzSC988" target="_blank"><i class="fa-solid fa-location-dot"></i> Ver ubicación</a>
+    <article class="estreno-card">
+        <h2><i class="fa-solid fa-cube"></i> LA SIMULACIÓN REMASTER EN 3D</h2>
+        <p>En 2027 SOLO POR CINE LAPTOP - Más capítulos y gráficos 3D</p>
+        <div id="tt-simulacion">
+            <button class="boton-reproducir" onclick="reproducirTikTok('tt-simulacion', '7651822283547331858', 'https://www.tiktok.com/@cinelaptop2/video/7651822283547331858', 'La simulación tráiler remaster')">
+                <i class="fa-solid fa-play"></i> Ver Tráiler
+            </button>
+        </div>
+    </article>
 
     <br><hr><br>
 
-    <h2><i class="fa-solid fa-globe"></i> DOCUMENTAL MIL MÁSCARAS</h2>
-    <p>30 de Junio SOLO POR CINE LAPTOP – Una Leyenda Mundial</p>
-    <div id="tt-mascaras">
-        <button class="boton-reproducir" onclick="reproducirTikTok('tt-mascaras', 'https://vt.tiktok.com/ZSQWHgw1m/')"><i class="fa-solid fa-play"></i> Ver Tráiler</button>
-    </div>
+    <article class="estreno-card">
+        <h2><i class="fa-solid fa-mountain"></i> DOCUMENTAL CERRO CUATLAPANGA</h2>
+        <p>En 2027 – Mejoras y mucho más</p>
+        <a class="boton" href="https://maps.app.goo.gl/yGFGzm3ZJDmzSC988" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-location-dot"></i> Ver ubicación
+        </a>
+    </article>
+
+    <br><hr><br>
+
+    <article class="estreno-card">
+        <h2><i class="fa-solid fa-globe"></i> DOCUMENTAL MIL MÁSCARAS</h2>
+        <p>30 de Junio SOLO POR CINE LAPTOP – Una Leyenda Mundial</p>
+        <div id="tt-mascaras" style="display: flex; justify-content: center; margin-top: 15px;">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cinelaptop2/video/7652911005571288328" data-video-id="7652911005571288328" style="max-width: 605px;min-width: 325px;"> 
+                <section> 
+                    <a target="_blank" rel="noopener noreferrer" title="@cinelaptop2" href="https://www.tiktok.com/@cinelaptop2?refer=embed">@cinelaptop2</a> 
+                    <p>Próximamente mil máscaras solo por Cine laptop</p> 
+                    <a target="_blank" rel="noopener noreferrer" title="♬ sonido original - Tráilers de cine laptop 💻" href="https://www.tiktok.com/music/sonido-original-7652911102799416084?refer=embed">♬ sonido original - Tráilers de cine laptop 💻</a> 
+                </section> 
+            </blockquote>
+        </div>
+    </article>
 </section>
 
 <!-- SECCIÓN DE NOTICIAS Y NOVEDADES -->
@@ -82,6 +99,7 @@
 
 <hr>
 
+<!-- TE RECOMENDAMOS -->
 <section class="seccion-recomendados">
     <h2 class="seccion-titulo"><i class="fa-solid fa-thumbs-up"></i> TE RECOMENDAMOS</h2>
     <div class="catalogo">
@@ -108,8 +126,8 @@
 
 <hr>
 
+<!-- DOCUMENTALES -->
 <h2 style="text-align:center; margin-top: 30px;"><i class="fa-solid fa-video"></i> DOCUMENTALES</h2>
-
 <section class="catalogo">
     <div class="pelicula" id="doc-pan-original">
         <h3>Documental Pan de Muerto Original</h3>
@@ -131,8 +149,8 @@
     </div>
 </section>
 
+<!-- STOP MOTION -->
 <h2 style="text-align:center;"><i class="fa-solid fa-camera-retro"></i> STOP MOTION</h2>
-
 <section class="catalogo">
     <div class="pelicula" id="sm-1er">
         <h3>1er Stop Motion</h3>
@@ -172,8 +190,8 @@
     </div>
 </section>
 
+<!-- SERIES -->
 <h2 style="text-align:center;"><i class="fa-solid fa-tv"></i> SERIES</h2>
-
 <section class="catalogo">
     <div class="pelicula" id="serie-simulacion">
         <h3>La Simulación</h3>
@@ -195,8 +213,8 @@
     </div>
 </section>
 
+<!-- ADAPTACIONES -->
 <h2 style="text-align:center;"><i class="fa-solid fa-masks-theater"></i> ADAPTACIONES</h2>
-
 <section class="catalogo">
     <div class="pelicula" id="adap-nocturne">
         <h3>Nocturne: Adaptación</h3>
@@ -206,8 +224,8 @@
     </div>
 </section>
 
+<!-- PLAYLIST -->
 <h2 style="text-align:center;"><i class="fa-solid fa-layer-group"></i> Playlist Completa</h2>
-
 <section class="catalogo">
     <div class="pelicula" id="playlist-all">
         <h3>Cine Laptop videos</h3>
@@ -215,90 +233,48 @@
         <button class="boton-reproducir" onclick="reproducirVideo('playlist-all', 'hYmyKxIMozY')"><i class="fa-solid fa-play"></i> Reproducir</button>
     </div>
 </section>
+
 <!-- SECCIÓN DE FOTOGRAFÍAS Y POSTERS -->
 <h2 style="text-align:center; margin-top: 40px;"><i class="fa-solid fa-camera"></i> GALERÍA Y POSTERS OFICIALES</h2>
-
 <section class="galeria-instagram-grid">
-    <!-- Foto 1: Cinema Guajolote Poster -->
     <div class="instagram-card">
-        <iframe src="https://www.instagram.com/p/DaRuGDLjar_/embed" 
-                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/p/DaRuGDLjar_/embed" width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
     </div>
-
-    <!-- Foto 2: Publicación 2 -->
     <div class="instagram-card">
-        <iframe src="https://www.instagram.com/p/DWKG4nkiTvj/embed" 
-                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/p/DWKG4nkiTvj/embed" width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
     </div>
-
-    <!-- Foto 3: Publicación 3 -->
     <div class="instagram-card">
-        <iframe src="https://www.instagram.com/p/DWKGU-ciRKA/embed" 
-                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/p/DWKGU-ciRKA/embed" width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
     </div>
-
-    <!-- Foto 4: Publicación 4 -->
     <div class="instagram-card">
-        <iframe src="https://www.instagram.com/p/DPnYvqYDAwD/embed" 
-                width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/p/DPnYvqYDAwD/embed" width="100%" height="450" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
     </div>
 </section>
 
+<!-- REDES SOCIALES -->
 <section class="redes-sociales">
     <h2><i class="fa-solid fa-share-nodes"></i> Síguenos en nuestras redes sociales</h2>
     <p>
-        <a href="https://www.instagram.com/cine_laptop?igsh=MTNnYmh3cWltYWNwMw==" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> |
-        <a href="https://www.facebook.com/share/1HJiUqpKvt/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> |
-        <a href="https://youtube.com/@cinelaptop-u9j?si=R7igyP9XsIZM3z_m" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> |
-        <a href="https://www.tiktok.com/@cine_laptop?_r=1&_t=ZS-97P9AJISHOU" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a> |
-        <a href="https://x.com/cinelaptop?s=11" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a> |
-        <a href="https://whatsapp.com/channel/0029VaeHSpp7tkj45zYfi31U" target="_blank"><i class="fa-brands fa-whatsapp"></i> Canal de WhatsApp</a> |
-        <a href="https://www.threads.com/@cine_laptop?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa-brands fa-threads"></i> Threads</a>
+        <a href="https://www.instagram.com/cine_laptop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a> |
+        <a href="https://www.facebook.com/share/1HJiUqpKvt/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a> |
+        <a href="https://youtube.com/@cinelaptop-u9j" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a> |
+        <a href="https://www.tiktok.com/@cine_laptop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i> TikTok</a> |
+        <a href="https://x.com/cinelaptop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> Twitter</a> |
+        <a href="https://whatsapp.com/channel/0029VaeHSpp7tkj45zYfi31U" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Canal de WhatsApp</a> |
+        <a href="https://www.threads.com/@cine_laptop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads"></i> Threads</a>
     </p>
 </section>
 
 <footer>
     © 2026 Cine Laptop<br><br>
     Fernando Blancas Salado y Antonio Serrano Rojas<br><br>
-    <a href="https://www.instagram.com/ferblssld80?igsh=MWRucmgxNHA3bWVpOQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i> FERNANDO INSTAGRAM</a> |
-    <a href="https://www.instagram.com/c.blanca_luna?igsh=aXA5aGdsdTBoYjV" target="_blank"><i class="fa-brands fa-instagram"></i> ANTONIO INSTAGRAM</a>
+    <a href="https://www.instagram.com/ferblssld80" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> FERNANDO INSTAGRAM</a> |
+    <a href="https://www.instagram.com/c.blanca_luna" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> ANTONIO INSTAGRAM</a>
 </footer>
 
-<!-- Carga de la API de TikTok -->
+<!-- Carga de scripts externos -->
 <script async src="https://www.tiktok.com/embed.js"></script>
-
-<script>
-// Reproductor dinámico de YouTube
-function reproducirVideo(idTarjeta, idVideo) {
-    var tarjeta = document.getElementById(idTarjeta);
-    var boton = tarjeta.querySelector('.boton-reproducir');
-    
-    var contenedorVideo = document.createElement('div');
-    contenedorVideo.className = 'contenedor-video-embed';
-    contenedorVideo.innerHTML = '<iframe src="https://www.youtube.com/embed/' + idVideo + '?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-    
-    tarjeta.replaceChild(contenedorVideo, boton);
-}
-
-// Reproductor dinámico de TikTok
-function reproducirTikTok(idContenedor, urlTikTok) {
-    var contenedor = document.getElementById(idContenedor);
-    
-    contenedor.innerHTML = `
-        <div class="contenedor-tiktok-embed">
-            <blockquote class="tiktok-embed" cite="${urlTikTok}" data-video-id="" style="max-width: 605px;min-width: 325px;">
-                <section>
-                    <a target="_blank" href="${urlTikTok}">Ver tráiler en TikTok</a>
-                </section>
-            </blockquote>
-        </div>
-    `;
-    
-    if (window.tiktokEmbed) {
-        window.tiktokEmbed.load();
-    }
-}
-</script>
+<script src="scriptcl.js"></script>
 
 </body>
 </html>
