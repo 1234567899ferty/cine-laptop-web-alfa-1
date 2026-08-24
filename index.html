@@ -14,7 +14,7 @@
 
 <header>
     <div class="header-logo-container">
-        <img src="https://www.gstatic.com/android/keyboard/emojikitchen/20240530/u1f4bb/u1f4bb_u1f3ac.png" alt="Cine Laptop Logo" class="logo-emoji">
+        <img id="logo-dinamico" src="https://www.gstatic.com/android/keyboard/emojikitchen/20240530/u1f4bb/u1f4bb_u1f3ac.png" alt="Cine Laptop Logo" class="logo-emoji" onclick="cambiarLogoAleatorio()">
         <div>
             <h1>CINE LAPTOP</h1>
             <p>Versión 2.8</p>
@@ -25,6 +25,7 @@
 <!-- SECCIÓN PRÓXIMOS ESTRENOS -->
 <section class="banner-proximos">
     <h2><i class="fa-solid fa-film"></i> PRÓXIMOS ESTRENOS</h2>
+    <br><hr><br>
 
     <article class="estreno-card">
         <h2><i class="fa-solid fa-cube"></i> LA SIMULACIÓN REMASTER EN 3D</h2>
@@ -52,13 +53,9 @@
         <h2><i class="fa-solid fa-globe"></i> DOCUMENTAL MIL MÁSCARAS</h2>
         <p>30 de Junio SOLO POR CINE LAPTOP – Una Leyenda Mundial</p>
         <div id="tt-mascaras" style="display: flex; justify-content: center; margin-top: 15px;">
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@cinelaptop2/video/7652911005571288328" data-video-id="7652911005571288328" style="max-width: 605px;min-width: 325px;"> 
-                <section> 
-                    <a target="_blank" rel="noopener noreferrer" title="@cinelaptop2" href="https://www.tiktok.com/@cinelaptop2?refer=embed">@cinelaptop2</a> 
-                    <p>Próximamente mil máscaras solo por Cine laptop</p> 
-                    <a target="_blank" rel="noopener noreferrer" title="♬ sonido original - Tráilers de cine laptop 💻" href="https://www.tiktok.com/music/sonido-original-7652911102799416084?refer=embed">♬ sonido original - Tráilers de cine laptop 💻</a> 
-                </section> 
-            </blockquote>
+            <button class="boton-reproducir" onclick="reproducirTikTok('tt-mascaras', '7652911005571288328', 'https://www.tiktok.com/@cinelaptop2/video/7652911005571288328', 'Tráiler Mil Máscaras')">
+                <i class="fa-solid fa-play"></i> Ver Tráiler
+            </button>
         </div>
     </article>
 </section>
@@ -273,7 +270,6 @@
 </footer>
 
 <!-- Carga de scripts externos -->
-<script async src="https://www.tiktok.com/embed.js"></script>
 <script src="scriptcl.js"></script>
 
 </body>
